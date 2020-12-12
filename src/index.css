@@ -1,0 +1,162 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+input,
+button {
+   background: none;
+   border: none;
+   outline: none;
+   appearance: none;
+   outline: none;
+}
+
+.App {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+form {
+   display: block;
+   position: relative;
+}
+
+.form-inner {
+   position: relative;
+   display: block;
+   background-color: #fff;
+   padding: 0 50px;
+   z-index: 2;
+   width: 400px;
+   height: 311px;
+   border: 1px solid #9999994a;
+   opacity: 33%;
+   border-radius: 5.51px;
+}
+.form-inner h2 {
+   color: #888;
+   font-size: 25px;
+   font-weight: 500;
+   padding-bottom: 30px;
+}
+.form-inner .form-group {
+   display: block;
+   position: relative;
+}
+.form-inner .form-group label {
+   display: block;
+   color: #666;
+   font-size: 12px;
+   padding-bottom: 5px;
+   transition: 0.4s;
+}
+.form-inner .form-group:focus-within label {
+   color: rgb(218, 40, 40);
+}
+.form-inner .form-group input {
+   display: block;
+   width: 100%;
+   padding: 12px 20px;
+   border: 1px solid #9999994a;
+   border-radius: 5.51px;
+   transition: 0.4s;
+}
+.form-group input::placeholder {
+   font-size: 14px;
+   letter-spacing: -0.14px;
+}
+.form-inner .form-group input:focus {
+   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-inner input[type="submit"],
+.welcome button {
+   display: inline-block;
+   padding: 13px 25px;
+   color: #fff;
+   border-radius: 3px;
+   cursor: pointer;
+   background-color: #02b3cadb;
+   margin-top: 40px;
+   font-size: 19px;
+}
+.form-inner input[type="email"] {
+   margin: 34px 0 34px 0;
+}
+
+.welcome {
+   width: 100%;
+   max-width: 480px;
+   background-color: #fff;
+   padding: 15px 40px;
+}
+.welcome h2 {
+   color: grey;
+   font-size: 25px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+.welcome h2 span {
+   color: red;
+   font-weight: 700;
+}
+.form-group-description {
+   padding-top: 20px;
+   color: #666666;
+   letter-spacing: -0.12px;
+   font-size: 12px;
+}
+.form-group-description a {
+   outline: none;
+   cursor: pointer;
+   text-decoration: none;
+   color: #02b3cadb;
+}
+
+.form-inner input[type="email"]:valid:not(:placeholder-shown) ~ .img-check {
+   display: block;
+}
+.form-inner input[type="password"]:valid:not(:placeholder-shown) ~ .img-check {
+   display: block;
+}
+.form-inner input[type="email"]:invalid:not(:placeholder-shown) ~ .img-cross {
+   display: block;
+}
+.form-inner input[type="password"]:invalid:not(:placeholder-shown) ~ .img-cross {
+   display: block;
+}
+
+img {
+   width: 10px;
+   height: auto;
+   position: absolute;
+   top: 40%;
+   left: 102%;
+}
+.img-cross {
+   display: none;
+}
+.img-check {
+   display: none;
+}
+.error {
+   margin-top: -30px;
+   color: red;
+   padding: 5px;
+}
+.errortwo {
+   padding: 5px;
+   color: red;
+}
+.title {
+   text-align: center;
+   color: #999999a6;
+}
+.title span {
+   font-size: 50px;
+   font-weight: bold;
+   color:  #02b3cadb;
+}
